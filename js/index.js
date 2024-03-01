@@ -19,10 +19,10 @@ mailLove.addEventListener("click", () => {
 
 love.addEventListener("click", () => {
     Swal.fire({
-        title: "Kirim keinginan kamu ke Apeep via WA",
+        title: "Kirim keinginan kamu ke Apeep",
         input: "text",
         width: 600,
-        padding: "3em",
+        padding: "1.5em",
         color: "#716add",
         // background: "#fff url(/images/trees.png)",
         // url("/images/nyan-cat.gif")
@@ -38,10 +38,10 @@ love.addEventListener("click", () => {
         showLoaderOnConfirm: true,
         preConfirm: (wish) => {
             if (!wish) {
-                Swal.showValidationMessage(`Kolom keinginannya diisi dong sayanggg !!`);
+                Swal.showValidationMessage(`Isi kolomnya dong sayanggg !!`);
                 return true;
             }
-            const url = `https://wa.me/628975836972?text=Halo%20Apeep%20Sayanggg,%20makasih%20ya%20udah%20bikin%20ini%20di%20hari%20anniversary%20kita,%20di%20hari%20spesial%20ini%20aku%20mau%20${wish}`;
+            const url = `https://wa.me/628975836972?text=Halo%20Apeep%20Sayanggg,%20makasih%20ya%20udah%20bikin%20ini%20di%20hari%20anniversary%20kita,%20di%20hari%20spesial%20ini%20aku%20mau,%20${wish}`;
             window.open(url);
         },
     });

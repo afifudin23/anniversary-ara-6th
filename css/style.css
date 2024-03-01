@@ -59,23 +59,27 @@ main {
     overflow: hidden;
 }
 .container-second img,
-.container-second h2 {
+.container-second h3 {
     background-color: #fff;
     border-radius: 30px;
     margin-bottom: 30px;
-    padding: 25px 40px;
+    padding: 20px 35px;
 }
 .container-second img {
     height: 200px;
 }
 main > p {
     margin: 40px 20px;
-    padding: 30px 30px;
+    padding: 30px;
     background-color: #fff;
     text-align: center;
     border-radius: 20px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
     display: none;
+}
+main > p img {
+    width: 130px;
 }
 
 /* Ours Gallery */
