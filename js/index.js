@@ -1,11 +1,13 @@
 const mailLove = document.querySelector(".mail-love");
 const containerFirst = document.querySelector(".container-first");
+const music = document.querySelector(".music");
 const quotes = document.querySelectorAll("main > p");
 const footer = document.querySelector("footer");
 const love = document.querySelector(".love");
 
 console.log(love);
 mailLove.addEventListener("click", () => {
+
     containerFirst.style.opacity = "0";
     containerFirst.style.zIndex = "0";
     containerFirst.style.animation = "lenyap 1s ease";
@@ -14,7 +16,13 @@ mailLove.addEventListener("click", () => {
         quotes[i].style.display = "block";
     }
     footer.style.display = "flex";
+    music.innerHTML = `
+        <audio autoplay hidden loop>
+            <source src="audio/aku_juga_suka_kamu.mp3" type="audio/mpeg">
+        </audio>
+    `;
     AOS.init();
+
 });
 
 love.addEventListener("click", () => {

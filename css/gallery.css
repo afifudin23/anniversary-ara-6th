@@ -60,7 +60,13 @@
     left: calc(50% + 760px);
     background-size: cover;
 }
-.slider .slides:nth-child(6) {
+
+.slider .slides:nth-child(6),
+.slider .slides:nth-child(7),
+.slider .slides:nth-child(8),
+.slider .slides:nth-child(9),
+.slider .slides:nth-child(10),
+.slider .slides:nth-child(11) {
     left: calc(50% + 1020px);
     background-size: cover;
     opacity: 0;
