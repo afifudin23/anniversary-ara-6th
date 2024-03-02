@@ -26,7 +26,7 @@ love.addEventListener("click", () => {
         color: "#716add",
         // background: "#fff url(/images/trees.png)",
         backdrop: `
-            url("img/gif5.gif")
+            url("img/gif10.gif")
             rgba(0,0,123,0.4)
             center top
             no-repeat

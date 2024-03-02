@@ -31,8 +31,6 @@ main {
     opacity: 1;
     align-content: center;
     align-items: center;
-    /* animation: lenyap 1s ease; */
-    /* transition: ; */
 }
 .card {
     background-color: #fff;
