@@ -1,11 +1,12 @@
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
+const slider = document.querySelector(".slider");
 
 next.addEventListener("click", () => {
-    let items = document.querySelectorAll(".item");
-    document.querySelector(".slide").appendChild(items[0]);
+    let slides = document.querySelectorAll(".slides");
+    slider.appendChild(slides[0]);
 });
 prev.addEventListener("click", () => {
-    let items = document.querySelectorAll(".item");
-    document.querySelector(".slide").prepend(items[items.length - 1]);
+    let slides = document.querySelectorAll(".slides");
+    slider.prepend(slides[slides.length - 1]);
 });
